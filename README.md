@@ -31,15 +31,21 @@ Currently the following Test Adapters are available:
 
 * [Ceedling Test Explorer](https://marketplace.visualstudio.com/items?itemName=numaru.vscode-ceedling-test-adapter)
 * [CppUTest Test Explorer](https://marketplace.visualstudio.com/items?itemName=bneumann.cpputest-test-adapter)
+* [Unity Framework for C Test Explorer](https://marketplace.visualstudio.com/items?itemName=fpopescu.vscode-unity-test-adapter)
 
 ### C++
 
-* [Catch2 and Google Test Explorer](https://marketplace.visualstudio.com/items?itemName=matepek.vscode-catch2-test-adapter)
+* [C++ TestMate](https://marketplace.visualstudio.com/items?itemName=matepek.vscode-catch2-test-adapter)
 * [CMake Test Explorer](https://marketplace.visualstudio.com/items?itemName=fredericbonnet.cmake-test-adapter)
 * [CppUnitTestFramework Explorer](https://marketplace.visualstudio.com/items?itemName=drleq.vscode-cpputf-test-adapter)
 * [Bandit Test Explorer](https://marketplace.visualstudio.com/items?itemName=dampsoft.vscode-banditcpp-test-adapter)
 * [catkin-tools](https://marketplace.visualstudio.com/items?itemName=betwo.b2-catkin-tools)
 * [CppUTest Test Explorer](https://marketplace.visualstudio.com/items?itemName=bneumann.cpputest-test-adapter)
+* [Boost.Test Explorer](https://marketplace.visualstudio.com/items?itemName=zcoinofficial.boost-test-adapter)
+
+### Elm
+
+* [Run Elm tests](https://marketplace.visualstudio.com/items?itemName=FraWa.vscode-elm-test-runner)
 
 ### Go
 
@@ -48,6 +54,10 @@ Currently the following Test Adapters are available:
 ### Haxe
 
 * [Haxe Test Explorer](https://marketplace.visualstudio.com/items?itemName=vshaxe.haxe-test-adapter)
+
+### Lua
+
+* [LuaUnit Test Explorer](https://marketplace.visualstudio.com/items?itemName=lej.vscode-lua-test-adapter)
 
 ### Python
 
@@ -58,6 +68,10 @@ Currently the following Test Adapters are available:
 * [PHPUnit Test Explorer](https://marketplace.visualstudio.com/items?itemName=recca0120.vscode-phpunit)
 * [PHP Tools for VSCode](https://marketplace.visualstudio.com/items?itemName=DEVSENSE.phptools-vscode)
 
+### REST/GraphQL
+
+* [Ply](https://marketplace.visualstudio.com/items?itemName=ply-ct.vscode-ply)
+
 ### Ruby
 
 * [Ruby Test Explorer](https://marketplace.visualstudio.com/items?itemName=connorshea.vscode-ruby-test-adapter)
@@ -66,9 +80,21 @@ Currently the following Test Adapters are available:
 
 * [Rust Test Explorer](https://marketplace.visualstudio.com/items?itemName=swellaby.vscode-rust-test-adapter)
 
+### Swift
+
+* [Swift Test Explorer](https://marketplace.visualstudio.com/items?itemName=MakeItBetter.vscode-swift-test-adapter)
+
 ### .NET Framework
 
 * [NXunit Test Explorer](https://marketplace.visualstudio.com/items?itemName=wghats.vscode-nxunit-test-adapter)
+* [.Net Core Test Explorer](https://marketplace.visualstudio.com/items?itemName=derivitec-ltd.vscode-dotnet-adapter)
+
+### Powershell
+* [Pester Test Explorer](https://marketplace.visualstudio.com/items?itemName=TylerLeonhardt.vscode-pester-test-adapter)
+
+### VHDL/SystemVerilog
+
+* [VUnit Test Explorer](https://marketplace.visualstudio.com/items?itemName=hbohlin.vunit-test-explorer)
 
 ### Z80 Assembler
 
@@ -86,6 +112,7 @@ If there is no Test Adapter for your favorite testing framework yet, you can eas
 Currently the following Test Controllers are available:
 
 * The Test Explorer UI (which is the main part of this extension) is itself implemented as a Test Controller
+* The [Test Explorer Diagnostics Controller](https://marketplace.visualstudio.com/items?itemName=emilylilylime.vscode-test-explorer-diagnostics) adds test results to the Problems panel in VS Code.
 * The [Test Explorer Status Bar](https://marketplace.visualstudio.com/items?itemName=connorshea.vscode-test-explorer-status-bar) extension provides information about the current test suite in the Status Bar.
 * The [Test Explorer Live Share](https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-test-explorer-liveshare) extension creates Test Controllers in
 the Live Share host that act as proxies for the Test Explorers in the Live Share guests.

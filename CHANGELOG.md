@@ -1,3 +1,31 @@
+### Version 2.19.5
+* update list of test adapters in README.md
+
+### Version 2.19.4
+* bugfix: tests were sometimes duplicated when describes were found while running tests (e.g. describe.each)
+* update list of test adapters in README.md
+
+### Version 2.19.3
+* show source on tree item double-click
+* show workspace folder and Test Adapter label when the tests fail to load
+* update list of test adapters in README.md
+
+### Version 2.19.2
+* This release is identical to the previous one, it was only created to republish this extension at open-vsx.org
+
+### Version 2.19.1
+* UI bugfix for running multiple test runs in parallel
+
+### Version 2.19.0
+* add support for marking suites as errored
+* add support for marking tests and suites as not debuggable
+* improve support for running multiple test runs in parallel
+
+### Version 2.18.1
+* The debug icon in the Test Explorer is now also shown for test suites
+* The background color for error decorations can now be customized by color themes
+* update list of test adapters in README.md
+
 ### Version 2.18.0
 * Workaround for microsoft/vscode#94872, which broke some of the global menu items in the Test Explorer view
 * Allow test-explorer.reveal command argument to be the ID of a node

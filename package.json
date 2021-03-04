@@ -5,7 +5,7 @@
   "icon": "icon.png",
   "author": "Holger Benl <hbenl@evandor.de>",
   "publisher": "hbenl",
-  "version": "2.18.0",
+  "version": "2.19.5",
   "license": "MIT",
   "homepage": "https://github.com/hbenl/vscode-test-explorer",
   "repository": {
@@ -33,15 +33,16 @@
     "publish": "vsce publish"
   },
   "dependencies": {
-    "escape-string-regexp": "^3.0.0",
-    "tslib": "^1.11.1",
-    "vscode-test-adapter-api": "^1.8.0"
+    "escape-string-regexp": "^4.0.0",
+    "tslib": "^2.1.0",
+    "vscode-test-adapter-api": "^1.9.0"
   },
   "devDependencies": {
+    "@types/node": "^14.14.20",
     "@types/vscode": "~1.38.0",
     "rimraf": "^3.0.2",
-    "typescript": "^3.8.3",
-    "vsce": "^1.75.0"
+    "typescript": "^4.1.3",
+    "vsce": "^1.83.0"
   },
   "engines": {
     "vscode": "^1.38.0"
@@ -50,6 +51,17 @@
     "*"
   ],
   "contributes": {
+    "colors": [
+      {
+        "id": "testExplorer.errorDecorationBackground",
+        "description": "Background color of the editor error decoration",
+        "defaults": {
+          "dark": "inputValidation.errorBackground",
+          "light": "inputValidation.errorBackground",
+          "highContrast": "inputValidation.errorBackground"
+        }
+      }
+    ],
     "configuration": {
       "type": "object",
       "title": "Test Explorer",
@@ -445,12 +457,27 @@
         {
           "command": "test-explorer.debug",
           "group": "inline@1",
+          "when": "view == test-explorer && viewItem == debuggableSuiteWithSource"
+        },
+        {
+          "command": "test-explorer.debug",
+          "group": "inline@1",
+          "when": "view == test-explorer && viewItem == debuggableSuite"
+        },
+        {
+          "command": "test-explorer.debug",
+          "group": "inline@1",
           "when": "view == test-explorer && viewItem == debuggableTestWithSource"
         },
         {
           "command": "test-explorer.debug",
           "group": "inline@1",
           "when": "view == test-explorer && viewItem == debuggableTest"
+        },
+        {
+          "command": "test-explorer.show-source",
+          "group": "inline@3",
+          "when": "view == test-explorer && viewItem == debuggableSuiteWithSource"
         },
         {
           "command": "test-explorer.show-source",
