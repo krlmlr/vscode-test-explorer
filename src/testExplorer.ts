@@ -91,15 +91,6 @@ export class TestExplorer implements TestController, vscode.TreeDataProvider<Tre
 
 				return [];
 
-			} else if (nonEmptyCollections.length === 1) {
-
-				const collection = nonEmptyCollections[0];
-				if (collection.suite) {
-					return collection.suite.children;
-				} else { // collection.error !== undefined
-					return [ collection.error! ];
-				}
-
 			} else {
 
 				return nonEmptyCollections.map(collection => (collection.suite || collection.error)!);
